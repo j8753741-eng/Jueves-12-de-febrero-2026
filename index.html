@@ -2,173 +2,187 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>12 de Febrero 2026</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<title>Nuestra Historia</title>
 
 <style>
 body{
     margin:0;
     padding:0;
-    background:radial-gradient(circle at center, #111 0%, #000 80%);
+    font-family: 'Georgia', serif;
+    background: radial-gradient(circle at center, #1a1a2e, #0f0c29);
     color:white;
-    font-family:'Poppins', sans-serif;
-    animation: breathe 6s ease-in-out infinite;
-}
-
-@keyframes breathe{
-    0%{background-color:#000;}
-    50%{background-color:#0a0a0a;}
-    100%{background-color:#000;}
+    text-align:center;
+    overflow-x:hidden;
 }
 
 .container{
+    padding:60px 20px;
     max-width:900px;
     margin:auto;
-    padding:40px 25px;
 }
 
-.video{
-    position:relative;
+h1{
+    font-size:55px;
+    letter-spacing:4px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:20px;
+    opacity:0.8;
+    margin-bottom:50px;
+}
+
+iframe{
     width:100%;
-    padding-bottom:56.25%;
+    height:420px;
+    border-radius:25px;
+    box-shadow:0 0 50px rgba(255,255,255,0.2);
     margin-bottom:60px;
 }
 
-.video iframe{
-    position:absolute;
-    width:100%;
-    height:100%;
-    border:none;
-    border-radius:15px;
+/* EFECTO NEÓN ANIMADO */
+@keyframes glow {
+    0% { opacity:0.8; }
+    50% { opacity:1; }
+    100% { opacity:0.8; }
 }
 
-.carta{
-    font-size:1.15rem;
-    line-height:1.9;
-    margin-bottom:80px;
-    animation: fadeUp 1.5s ease forwards;
-    opacity:0;
-    transform:translateY(40px);
-}
-
-@keyframes fadeUp{
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-.frase{
-    text-align:center;
-    font-family:'Playfair Display', serif;
-    font-size:2rem;
-    margin:80px 0;
-}
-
-.teamo{
-    text-align:center;
-    font-size:2.3rem;
-    margin:80px 0;
-}
-
-.promesa{
-    text-align:center;
-    font-size:1.3rem;
-    margin-top:100px;
-    opacity:0.8;
-}
-
-/* NEÓN */
 .neon-red{
-    color:#ff3131;
-    text-shadow:0 0 5px #ff3131,0 0 15px #ff0000,0 0 30px #ff0000;
+    color:#ff2b2b;
+    text-shadow:
+    0 0 5px #ff2b2b,
+    0 0 15px #ff0000,
+    0 0 30px #ff0000;
+    animation: glow 2s infinite;
 }
 
 .neon-yellow{
-    color:#ffd700;
-    text-shadow:0 0 5px #ffd700,0 0 15px #ffea00,0 0 30px #ffea00;
+    color:#ffd900;
+    text-shadow:
+    0 0 5px #ffd900,
+    0 0 15px #ffea00,
+    0 0 30px #ffea00;
+    animation: glow 2s infinite;
 }
 
 .neon-pink{
-    color:#ff4df0;
-    text-shadow:0 0 5px #ff4df0,0 0 15px #ff00ff,0 0 30px #ff00ff;
+    color:#ff4de1;
+    text-shadow:
+    0 0 5px #ff4de1,
+    0 0 15px #ff00cc,
+    0 0 30px #ff00cc;
+    animation: glow 2s infinite;
 }
 
 .neon-blue{
-    color:#4dd2ff;
-    text-shadow:0 0 5px #4dd2ff,0 0 15px #00bfff,0 0 30px #00bfff;
+    color:#00f7ff;
+    text-shadow:
+    0 0 5px #00f7ff,
+    0 0 15px #00e1ff,
+    0 0 30px #00e1ff;
+    animation: glow 2s infinite;
+}
+
+.section{
+    margin:80px 0;
+}
+
+.quote{
+    font-size:30px;
+    font-style:italic;
+    padding:20px;
+}
+
+.main-letter{
+    background: rgba(255,255,255,0.05);
+    padding:50px;
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    font-size:20px;
+    line-height:1.9;
+    min-height:250px;
+}
+
+.teamo{
+    font-size:65px;
+    letter-spacing:6px;
+    margin:20px 0;
+}
+
+.promise{
+    font-size:22px;
+    line-height:1.8;
+    padding:20px;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,0.2);
+    margin:70px 0;
+}
+
+.footer{
+    font-size:24px;
+    margin-top:100px;
+    opacity:0.9;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <div class="container">
 
+<h1>Nuestra Película</h1>
+<div class="subtitle">Una historia que apenas comienza...</div>
+
 <!-- VIDEO -->
-<div class="video">
-<iframe src="https://www.youtube.com/embed/7AlqmuDc4gg?autoplay=1&mute=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+<iframe src="https://www.youtube.com/embed/7AlqmuDc4gg" allowfullscreen></iframe>
 
-<!-- TU CARTA COMPLETA -->
-<div class="carta">
-<strong>Mi amor, mi vida, mi todo…</strong>
-  <p>Hoy quiero escribirte algo que tal vez mis manos no logren contener, porque lo que siento por ti no cabe en letras, ni en páginas, ni en el tiempo mismo. Pero aun así voy a intentarlo, porque si hay algo que siempre merecerá ser dicho, repetido y gritado en silencio… es cuánto te amo.
-Desde que llegaste a mi vida, algo dentro de mí despertó de una forma que jamás había sentido. No fue solo enamorarme… fue descubrir una manera completamente nueva de respirar, de sentir, de existir. Es como si antes de ti el mundo hubiera estado en tonos suaves, bonitos, sí… pero contigo todo se volvió intenso, profundo, vibrante, infinito.
-Tú no solo entraste en mi corazón… hiciste de él tu hogar.
-Hay momentos en los que me quedo mirándote y siento que el tiempo se detiene. Como si el universo quisiera regalarme unos segundos extra solo para admirarte. Porque cuando te observo, no veo solo a la mujer que amo… veo a la persona que transformó mi vida sin darse cuenta. Veo la calma que siempre busqué. Veo el fuego que enciende mi alma. Veo el futuro que quiero construir.
-Me enamora tu sonrisa de una manera que no puedo explicar. Es como si cada vez que sonríes, el mundo entero se alineara para recordarme lo afortunado que soy. Me enamora tu mirada, porque en tus ojos siento un refugio, un misterio, una profundidad que me hace perderme y encontrarme al mismo tiempo.
-Me enamora tu voz… porque cuando hablas, todo parece tener sentido. Incluso cuando dices cosas simples, tu voz tiene la capacidad de quedarse en mi mente, repitiéndose suavemente como una melodía que no quiero dejar de escuchar jamás.
-Me enamora tu forma de existir… tu forma de sentir… tu forma de amar.
-Y es que amarte no es solo un sentimiento… es una experiencia completa. Es sentir cómo mi corazón late más fuerte cuando pienso en ti. Es sentir un vacío pequeño cuando no estás cerca. Es sentir una paz inmensa cuando te abrazo. Es sentir que el mundo puede estar en caos, pero mientras estés conmigo, todo estará bien.
-Te amo con una intensidad que a veces me asusta… porque jamás imaginé que alguien pudiera significar tanto para mí. Pero al mismo tiempo, es el miedo más hermoso que he sentido, porque nace del amor más real que he conocido.
-Te amo en lo visible y en lo invisible.
-Te amo cuando estás feliz y el brillo en tus ojos ilumina todo. Te amo cuando estás cansada y solo quieres descansar en silencio. Te amo cuando hablas de tus sueños, porque escucharte imaginar el futuro me hace querer construirlo contigo. Te amo cuando dudas, porque en esos momentos quiero abrazarte y recordarte lo increíble que eres.
-Quiero que sepas algo que nace desde lo más profundo de mí: tu felicidad se volvió parte de la mía. Verte sonreír me llena. Verte tranquila me calma. Verte emocionada me inspira. Verte ser tú… me hace sentir que el amor existe de verdad.
-Si el amor tuviera forma, para mí tendría tu nombre.
-Hay algo tan íntimo en lo que siento por ti que a veces ni siquiera necesito palabras. Es esa conexión que aparece cuando nuestras miradas se encuentran. Ese lenguaje silencioso que solo nosotros entendemos. Esa sensación de cercanía que hace que todo alrededor desaparezca.
-Me encanta sentirte cerca. Sentir tus abrazos que parecen detener el mundo. Sentir tu presencia que me envuelve con una mezcla de ternura y pasión. Hay una chispa entre nosotros que no se apaga, que crece, que se vuelve más fuerte cada día… y me encanta perderme en esa sensación.
-Cuando estoy contigo, siento que puedo ser completamente yo. Sin miedo. Sin máscaras. Sin reservas. Y quiero que tú siempre sientas lo mismo conmigo. Quiero que conmigo tengas un lugar donde puedas ser libre, donde puedas ser fuerte y vulnerable al mismo tiempo, donde puedas descansar el corazón.
-Quiero ser tu refugio, pero también tu aventura. Quiero ser tu calma, pero también la emoción que acelere tu corazón. Quiero ser el abrazo que te proteja… y el amor que te impulse a volar.
-A veces me pongo a imaginar nuestro futuro… y me emociona pensar en todo lo que aún no hemos vivido. Imagino risas compartidas, conversaciones interminables, momentos simples que se vuelven inolvidables solo porque estamos juntos. Imagino construir recuerdos que un día miraremos atrás con una sonrisa llena de nostalgia y orgullo.
-Quiero caminar la vida contigo. No solo en los días fáciles, sino en los que pongan a prueba nuestra fuerza. Quiero sostener tu mano cuando el camino se vuelva difícil. Quiero celebrar contigo cada victoria, por pequeña que parezca. Quiero que sepas que nunca estarás sola mientras yo respire.
-Porque amarte es una decisión que tomo cada día… y cada día la tomo con más convicción.
-No existe distancia emocional cuando pienso en ti. Estás en mis pensamientos cuando despierto, en mis planes cuando organizo mi futuro, en mis sueños cuando cierro los ojos. Eres esa presencia constante que me acompaña incluso cuando no estás físicamente cerca.
-Hay noches en las que me quedo recordando momentos contigo… y siento una mezcla hermosa de paz y deseo. Paz por saber que te tengo en mi vida… y deseo de seguir descubriendo cada parte de ti, cada detalle, cada emoción que te hace única.
-Me fascina la manera en que nuestras almas parecen entenderse. La manera en que nuestras energías se encuentran. La forma en que contigo todo se siente más intenso, más verdadero, más vivo.
-Si el mundo desapareciera mañana… mi último pensamiento serías tú. Si pudiera vivir mil vidas… en cada una buscaría encontrarte. Si el tiempo intentara separarnos… lo enfrentaría solo para volver a ti.
-Porque tú no eres solo alguien importante en mi vida… tú eres mi historia favorita.
-Este 12 de febrero de 2026 quiero prometerte algo que nace desde lo más profundo de mi alma:
-Prometo amarte con paciencia. Prometo escucharte con el corazón. Prometo respetarte en cada etapa de tu vida. Prometo admirarte incluso en los días en los que tú no logres verte con claridad. Prometo elegirte… siempre.
-Elegirte cuando todo sea fácil. Elegirte cuando la vida nos desafíe. Elegirte en cada versión de nosotros que exista.
-Quiero que cuando pienses en amor… pienses en seguridad. Que cuando pienses en mí… pienses en hogar. Que cuando sientas miedo… recuerdes que tienes un corazón que late al ritmo del tuyo.
-Eres la mujer que despertó en mí sentimientos que ni sabía que existían. Eres la razón por la que ahora entiendo que el amor verdadero no es perfecto… es infinito, imperfecto, real, intenso, apasionado y profundamente humano.
-Me haces sentir vulnerable y fuerte al mismo tiempo. Me haces sentir tranquilo y lleno de fuego. Me haces sentir completo… sin dejar de hacerme crecer.
-Y si hoy pudiera resumir todo lo que siento en una sola verdad, sería esta:
-No hay un solo rincón de mi corazón donde no estés tú. No hay un solo sueño donde no aparezcas. No hay un solo futuro que quiera imaginar sin ti.
-Gracias por amarme. Gracias por confiar en mí. Gracias por permitir que mi vida tenga tu luz.
-Hoy, mañana, dentro de un año, dentro de toda una vida… seguiré mirándote con el mismo amor, con la misma admiración, con la misma intensidad que siento ahora.
-Porque lo nuestro no es casualidad… Es destino… Es elección… Es eternidad.
-Te amo con cada latido. Te amo con cada pensamiento. Te amo con cada parte de lo que soy. Y si amar tuviera un límite… yo ya lo habría roto por ti.
-Feliz 12 de febrero, mi amor.</p>
-  <p><strong>Siempre, absoluta e infinitamente tuyo. 💖</strong></p>
-</div>
-
-<!-- FRASE ROMÁNTICA -->
-<div class="frase neon-pink">
+<!-- FRASE ROMÁNTICA (VACÍA) -->
+<div class="section">
+<div class="quote neon-yellow">
 <STRONG>Si tus ojos dejaran de mirarme, mi mundo perdería su rumbo; porque desde que llegaste tú mi niña, mi corazón aprendió que amar no es solo sentir, es necesitar tu risa para respirar, tu abrazo para existir y tu amor para entender que todo lo hermoso del universo decidió reunirse en ti mi vida entera. </STRONG>
 </div>
+</div>
 
-<!-- TE AMO IMPACTANTE -->
+<hr>
+
+<!-- CARTA PRINCIPAL (VACÍA) -->
+<div class="section">
+<div class="main-letter neon-blue">
+<strong>Mi amor, mi vida, mi todo…</strong>
+    <p>Hoy quiero escribirte algo que tal vez mis manos no logren contener, porque lo que siento por ti no cabe en letras, ni en páginas, ni en el tiempo mismo. Pero aun así voy a intentarlo, porque si hay algo que siempre merecerá ser dicho, repetido y gritado en silencio… es cuánto te amo. Desde que llegaste a mi vida, algo dentro de mí despertó de una forma que jamás había sentido. No fue solo enamorarme… fue descubrir una manera completamente nueva de respirar, de sentir, de existir. Es como si antes de ti el mundo hubiera estado en tonos suaves, bonitos, sí… pero contigo todo se volvió intenso, profundo, vibrante, infinito. Cada día a tu lado es una nueva oportunidad de explorar lo que significa amar y ser amado, y cada momento se convierte en un recuerdo que atesoro en lo más profundo de mi ser. Tú no solo entraste en mi corazón… hiciste de él tu hogar. Tu risa se ha convertido en la melodía que acompaña mis días, y tu voz es el eco que resuena en mi mente incluso cuando estamos separados. Hay momentos en los que me quedo mirándote y siento que el tiempo se detiene. Como si el universo quisiera regalarme unos segundos extra solo para admirarte. Porque cuando te observo, no veo solo a la mujer que amo… veo a la persona que transformó mi vida sin darse cuenta. Veo la calma que siempre busqué. Veo el fuego que enciende mi alma. Veo el futuro que quiero construir contigo, un futuro lleno de sueños compartidos y aventuras que aún no hemos vivido. Me enamora tu sonrisa de una manera que no puedo explicar. Es como si cada vez que sonríes, el mundo entero se alineara para recordarme lo afortunado que soy. Tu sonrisa tiene el poder de iluminar incluso los días más oscuros, y me hace sentir que todo es posible. Me enamora tu mirada, porque en tus ojos siento un refugio, un misterio, una profundidad que me hace perderme y encontrarme al mismo tiempo. En esos momentos, me doy cuenta de que en tus ojos hay un universo entero, un espacio donde puedo perderme y sentirme a salvo. Me enamora tu voz… porque cuando hablas, todo parece tener sentido. Incluso cuando dices cosas simples, tu voz tiene la capacidad de quedarse en mi mente, repitiéndose suavemente como una melodía que no quiero dejar de escuchar jamás. Es como si cada palabra que pronuncias estuviera impregnada de amor y sabiduría, y me siento afortunado de poder ser parte de tu mundo. Me enamora tu forma de existir… tu forma de sentir… tu forma de amar. Y es que amarte no es solo un sentimiento… es una experiencia completa. Es sentir cómo mi corazón late más fuerte cuando pienso en ti. Es sentir un vacío pequeño cuando no estás cerca. Es sentir una paz inmensa cuando te abrazo. Es sentir que el mundo puede estar en caos, pero mientras estés conmigo, todo estará bien. Tu presencia es un bálsamo para mi alma, y cada vez que te tengo cerca, siento que todo cobra sentido. Te amo con una intensidad que a veces me asusta… porque jamás imaginé que alguien pudiera significar tanto para mí. Pero al mismo tiempo, es el miedo más hermoso que he sentido, porque nace del amor más real que he conocido. Te amo en lo visible y en lo invisible. Te amo cuando estás feliz y el brillo en tus ojos ilumina todo. Te amo cuando estás cansada y solo quieres descansar en silencio. Te amo cuando hablas de tus sueños, porque escucharte imaginar el futuro me hace querer construirlo contigo. Te amo cuando dudas, porque en esos momentos quiero abrazarte y recordarte lo increíble que eres. Quiero que sepas algo que nace desde lo más profundo de mí: tu felicidad se volvió parte de la mía. Verte sonreír me llena. Verte tranquila me calma. Verte emocionada me inspira. Verte ser tú… me hace sentir que el amor existe de verdad. Si el amor tuviera forma, para mí tendría tu nombre. Hay algo tan íntimo en lo que siento por ti que a veces ni siquiera necesito palabras. Es esa conexión que aparece cuando nuestras miradas se encuentran. Ese lenguaje silencioso que solo nosotros entendemos. Esa sensación de cercanía que hace que todo alrededor desaparezca. Me encanta sentirte cerca. Sentir tus abrazos que parecen detener el mundo. Sentir tu presencia que me envuelve con una mezcla de ternura y pasión. Hay una chispa entre nosotros que no se apaga, que crece, que se vuelve más fuerte cada día… y me encanta perderme en esa sensación. Cuando estoy contigo, siento que puedo ser completamente yo. Sin miedo. Sin máscaras. Sin reservas. Y quiero que tú siempre sientas lo mismo conmigo. Quiero que conmigo tengas un lugar donde puedas ser libre, donde puedas ser fuerte y vulnerable al mismo tiempo, donde puedas descansar el corazón. Quiero ser tu refugio, pero también tu aventura. Quiero ser tu calma, pero también la emoción que acelere tu corazón. Quiero ser el abrazo que te proteja… y el amor que te impulse a volar. A veces me pongo a imaginar nuestro futuro… y me emociona pensar en todo lo que aún no hemos vivido. Imagino risas compartidas, conversaciones interminables, momentos simples que se vuelven inolvidables solo porque estamos juntos. Imagino construir recuerdos que un día miraremos atrás con una sonrisa llena de nostalgia y orgullo. Quiero caminar la vida contigo. No solo en los días fáciles, sino en los que pongan a prueba nuestra fuerza. Quiero sostener tu mano cuando el camino se vuelva difícil. Quiero celebrar contigo cada victoria, por pequeña que parezca. Quiero que sepas que nunca estarás sola mientras yo respire. Porque amarte es una decisión que tomo cada día… y cada día la tomo con más convicción. No existe distancia emocional cuando pienso en ti. Estás en mis pensamientos cuando despierto, en mis planes cuando organizo mi futuro, en mis sueños cuando cierro los ojos. Eres esa presencia constante que me acompaña incluso cuando no estás físicamente cerca. Hay noches en las que me quedo recordando momentos contigo… y siento una mezcla hermosa de paz y deseo. Paz por saber que te tengo en mi vida… y deseo de seguir descubriendo cada parte de ti, cada detalle, cada emoción que te hace única. Me fascina la manera en que nuestras almas parecen entenderse. La manera en que nuestras energías se encuentran. La forma en que contigo todo se siente más intenso, más verdadero, más vivo. Si el mundo desapareciera mañana… mi último pensamiento serías tú. Si pudiera vivir mil vidas… en cada una buscaría encontrarte. Si el tiempo intentara separarnos… lo enfrentaría solo para volver a ti. Porque tú no eres solo alguien importante en mi vida… tú eres mi historia favorita. Este 12 de febrero de 2026 quiero prometerte algo que nace desde lo más profundo de mi alma: Prometo amarte con paciencia. Prometo escucharte con el corazón. Prometo respetarte en cada etapa de tu vida. Prometo admirarte incluso en los días en los que tú no logres verte con claridad. Prometo elegirte… siempre. Elegirte cuando todo sea fácil. Elegirte cuando la vida nos desafíe. Elegirte en cada versión de nosotros que exista. Quiero que cuando pienses en amor… pienses en seguridad. Que cuando pienses en mí… pienses en hogar. Que cuando sientas miedo… recuerdes que tienes un corazón que late al ritmo del tuyo. Eres la mujer que despertó en mí sentimientos que ni sabía que existían. Eres la razón por la que ahora entiendo que el amor verdadero no es perfecto… es infinito, imperfecto, real, intenso, apasionado y profundamente humano. Me haces sentir vulnerable y fuerte al mismo tiempo. Me haces sentir tranquilo y lleno de fuego. Me haces sentir completo… sin dejar de hacerme crecer. Y si hoy pudiera resumir todo lo que siento en una sola verdad, sería esta: No hay un solo rincón de mi corazón donde no estés tú. No hay un solo sueño donde no aparezcas. No hay un solo futuro que quiera imaginar sin ti. Gracias por amarme. Gracias por confiar en mí. Gracias por permitir que mi vida tenga tu luz. Hoy, mañana, dentro de un año, dentro de toda una vida… seguiré mirándote con el mismo amor, con la misma admiración, con la misma intensidad que siento ahora. Porque lo nuestro no es casualidad… Es destino… Es elección… Es eternidad. Te amo con cada latido. Te amo con cada pensamiento. Te amo con cada parte de lo que soy. Y si amar tuviera un límite… yo ya lo habría roto por ti. Feliz 12 de febrero, mi amor. Y en cada 12 de febrero que pase, quiero celebrar no solo el amor que compartimos, sino también la vida que hemos construido juntos. Quiero recordar cada risa, cada lágrima, cada desafío superado y cada sueño alcanzado. Quiero agradecerte por ser la persona maravillosa que eres, por ser mi compañera, mi amiga, mi confidente y mi amor. Deseo que cada día que pase, sigamos creciendo juntos, aprendiendo el uno del otro, y descubriendo nuevas formas de amarnos. Que nunca perdamos la curiosidad ni la pasión por nuestra relación, y que siempre encontremos maneras de sorprendernos y deleitarnos mutuamente. Así que hoy, en este día tan especial, quiero reafirmar mi compromiso contigo. Quiero que sepas que eres el motor de mi vida, la razón detrás de mis sonrisas y el refugio donde encuentro paz. Te amo más de lo que las palabras pueden expresar, y seguiré amándote con cada fibra de mi ser. Feliz 12 de febrero, mi amor, y que cada año que pase sea un nuevo capítulo en nuestra hermosa historia.</p>
+</div>
+</div>
+
+<hr>
+
+<!-- TE AMO (VACÍO) -->
+<div class="section">
 <div class="teamo neon-red">
 Desde que llegaste a mi vida, todo empezó a tener más sentido, como si cada momento hubiera estado esperando tu presencia para volverse realmente especial. Hay algo en ti que transforma mis días normales en recuerdos que quiero guardar para siempre, porque cuando estoy contigo siento esa tranquilidad que muchos buscan toda su vida y pocos logran encontrar. No eres solo alguien importante para mí, eres esa persona que cambió mi forma de ver el amor, la felicidad y hasta mis propios sueños, <STRONG>TE AMO MUCHÍSIMO MI VALERIA ISABEL PETRO VILLAZÓN (MI NIÑA LINDA, MI VIDA ENTERA, MI MUJER, MI PRECIOSA, MI PRINCESA, MI ALMA GEMELA) </STRONG>.
 </div>
+</div>
 
-<!-- PROMESA SECRETA -->
+<hr>
+
+<!-- PROMESA SECRETA (VACÍA) -->
+<div class="section">
 <div class="promesa neon-blue">
 Prometo que en cada etapa de nuestra vida voy a elegirte, incluso en los días difíciles, incluso cuando el tiempo intente cambiarnos, porque quiero construir contigo un futuro donde nuestros sueños crezcan juntos, donde cada abrazo sea un refugio y donde, sin importar cuántos años pasen, sigamos mirándonos con la misma intensidad con la que hoy mi corazón late por ti <strong>preciosa.</strong>
+</div>
+</div>
+
+<hr>
+
+<div class="footer neon-yellow">
+Fin… o más bien, nuestro comienzo.
+    <p><strong>Siempre, absoluta e infinitamente tuyo. 💖</strong></p>
+    <p><strong>JUAN KALETH MENDOZA PRIMERA 💜</strong></p>
 </div>
 
 </div>
